@@ -71,7 +71,7 @@ Source: [leoolmos/pokechess](https://github.com/leoolmos/pokechess)
 | Mobile | Capacitor for iOS and Android |
 | Back end | Node.js, Fastify, Hono, Drizzle ORM, Zod, WebSockets |
 | Data | Aurora PostgreSQL, DynamoDB, S3 |
-| AWS | Lambda, API Gateway (HTTP and WebSocket), CloudFront, Cognito, SQS, SNS, SES, EventBridge Scheduler, Route 53, ACM, ECR, Secrets Manager, Bedrock |
+| AWS | Lambda, API Gateway (HTTP and WebSocket), CloudFront, Cognito, SQS, SNS, SES, Route 53, ACM, ECR, Secrets Manager, Bedrock |
 | AI | Claude on Amazon Bedrock, the Anthropic SDK, MCP servers |
 | IaC and CI/CD | AWS CDK, CloudFormation, Serverless Framework, GitHub Actions, Docker |
 | Testing | Vitest, Playwright |
