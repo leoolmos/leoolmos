@@ -28,8 +28,7 @@ Club management for tennis, padel, squash, pickleball and beach tennis: box leag
 A party game for the living room: a word search on the TV, a drawing pad on every phone, and an AI that tries to guess each drawing. Up to 8 players per room, 10 languages, Android and iOS apps.
 
 - **Front end:** Vue 3, TypeScript, Capacitor
-- **AI:** my own doodle-recognition model, trained in Python on Google's Quick, Draw! dataset and run inside the game server, so there is no per-drawing AI bill
-- **AWS:** API Gateway WebSockets, Lambda, DynamoDB, Cognito, SES, S3, CloudFront, defined in AWS SAM and CloudFormation, plus Stripe for payments
+- **AWS:** API Gateway WebSockets, Lambda, DynamoDB, Cognito, SES, S3, CloudFront, defined in CloudFormation, plus Stripe for payments
 
 ### ⚖️ [Conflict Club](https://www.conflict.club)
 
@@ -79,12 +78,12 @@ An interactive map of a large housing planning application in Bromley, London. T
 
 ## 🛠️ How I build and ship
 
-- **Infrastructure as code, always.** AWS CDK, AWS SAM, CloudFormation and the Serverless Framework, so every environment can be rebuilt from the repository.
+- **Infrastructure as code, always.** AWS CDK, CloudFormation and the Serverless Framework, so every environment can be rebuilt from the repository.
 - **CI/CD on GitHub Actions.** Lint, type-check, unit tests and Playwright end-to-end tests run in CI, and a merge deploys the stack.
 - **Keyless deploys.** The newer pipelines assume short-lived IAM roles through GitHub OIDC instead of storing AWS keys.
 - **Serverless first.** Lambda behind API Gateway, static front ends on S3 and CloudFront with cache invalidation on deploy, and Docker Buildx images pushed to ECR when a container fits better.
 - **Mobile from the same codebase.** Capacitor wraps the web apps, and CI compiles the Android and iOS release builds.
-- **Automation beyond deploys.** Scheduled workflows take database backups, refresh data daily, and review real game results every night to open a pull request with the evidence.
+- **Automation beyond deploys.** Scheduled workflows take database backups and refresh data every day.
 
 ## 🧰 Toolbox
 
@@ -96,7 +95,7 @@ An interactive map of a large housing planning application in Bromley, London. T
 | Back end | Node.js, Fastify, Hono, Drizzle ORM, Zod, WebSockets |
 | Data | Aurora PostgreSQL, DynamoDB, S3 |
 | AWS | Lambda, API Gateway (HTTP and WebSocket), CloudFront, Cognito, SQS, SNS, SES, EventBridge Scheduler, Route 53, ACM, ECR, Secrets Manager, Bedrock |
-| AI | Claude on Amazon Bedrock, the Anthropic SDK, MCP servers, a custom-trained doodle classifier |
-| IaC and CI/CD | AWS CDK, AWS SAM, CloudFormation, Serverless Framework, GitHub Actions, Docker |
+| AI | Claude on Amazon Bedrock, the Anthropic SDK, MCP servers |
+| IaC and CI/CD | AWS CDK, CloudFormation, Serverless Framework, GitHub Actions, Docker |
 | Testing | Vitest, Playwright |
 | Payments | Stripe |
