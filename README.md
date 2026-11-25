@@ -19,62 +19,39 @@ I design, build, deploy and run them end to end: Vue or React on the front, Type
 
 Club management for tennis, padel, squash, pickleball and beach tennis: box leagues, court booking, tournaments and payments. One codebase ships the web app (PWA) and the iOS and Android apps.
 
-- **Front end:** Vue 3, TypeScript, Pinia, Tailwind CSS v4, Capacitor, vue-i18n
-- **Back end:** Fastify, Drizzle ORM, Zod, Stripe, an MCP server, Claude on Amazon Bedrock
-- **AWS:** Lambda (container image from ECR), API Gateway, Aurora PostgreSQL, Cognito, SQS, SNS, SES, EventBridge Scheduler, Secrets Manager, S3, CloudFront, all defined in AWS CDK
-
 ### ✏️ [Lupisco](https://www.lupisco.com)
 
 A party game for the living room: a word search on the TV, a drawing pad on every phone, and an AI that tries to guess each drawing. Up to 8 players per room, 10 languages, Android and iOS apps.
-
-- **Front end:** Vue 3, TypeScript, Capacitor
-- **AWS:** API Gateway WebSockets, Lambda, DynamoDB, Cognito, SES, S3, CloudFront, defined in CloudFormation, plus Stripe for payments
 
 ### ⚖️ [Conflict Club](https://www.conflict.club)
 
 Real interpersonal conflicts, anonymized by AI. Two sides, one question: who's right? Read both stories and vote, and the crowd decides.
 
-- **Front end:** Vue 3, TypeScript, Tailwind CSS, PWA, Sentry
-- **Back end:** Hono on Lambda, Drizzle ORM, Claude on Amazon Bedrock
-- **AWS:** API Gateway, Aurora PostgreSQL, Cognito, SES, S3, CloudFront, all defined in AWS CDK
-- **Testing:** Vitest and Playwright
-
 ### 🗓️ [Holical](https://www.holical.co.uk)
 
 A trip and holiday planner: one full-year calendar that lines up school terms, bank holidays from any country and your leave allowance, with passwordless magic-link sign-in and sync across devices.
-
-- **Front end:** Vue 3, TypeScript, Tailwind CSS, PWA
-- **AWS:** Lambda, API Gateway, DynamoDB, SES, S3, CloudFront, Route 53, deployed with the Serverless Framework
 
 ### 🧩 [TheoCube](https://leoolmos.github.io/theocube/)
 
 A Rubik's Cube tutor. Every visit shuffles a brand-new cube and solves it step by step with the beginner layer method, on a 3D cube you can drag to rotate.
 
-- **Stack:** vanilla JavaScript (ES modules), Three.js, Tailwind CSS, hosted on GitHub Pages
-- **Source:** [leoolmos/theocube](https://github.com/leoolmos/theocube)
+Source: [leoolmos/theocube](https://github.com/leoolmos/theocube)
 
 ### 🌳 [Heritree](https://www.heritree.co.uk)
 
 A free family tree maker with photos, in 10 languages, right-to-left layouts included. No sign-up and no server: the tree lives in a file on your computer or in your own Google Drive, and exports to PDF or JPG.
 
-- **Front end:** React, TypeScript, Vite
-- **Testing:** Vitest and Playwright
-- **AWS:** S3, CloudFront with CloudFront Functions, Route 53 and ACM, defined in CloudFormation
-
 ### 🗺️ [Ravensbourne Place map](https://leoolmos.github.io/ravensbourne-place-bromley/)
 
 An interactive map of a large housing planning application in Bromley, London. The architects' floor plans are georeferenced into map tiles, all 578 Phase 1 homes are clickable, and the application status refreshes itself every day.
 
-- **Stack:** Leaflet, vanilla JavaScript, a Python data pipeline, hosted on GitHub Pages
-- **Automation:** a scheduled GitHub Actions workflow fetches the planning register daily
-- **Source:** [leoolmos/ravensbourne-place-bromley](https://github.com/leoolmos/ravensbourne-place-bromley)
+Source: [leoolmos/ravensbourne-place-bromley](https://github.com/leoolmos/ravensbourne-place-bromley)
 
 ### ♟️ [PokéChess](https://leoolmos.github.io/pokechess/)
 
-3D chess in the browser where the pieces are Pokémon. Full chess rules tested against the standard perft counts, a computer opponent that thinks in a Web Worker, and online games with a friend through a room link.
+3D chess in the browser where the pieces are Pokémon. Full chess rules, a computer opponent with six difficulty levels, and online games with a friend through a room link.
 
-- **Stack:** TypeScript, Three.js, Vite, PeerJS, Vitest, deployed to GitHub Pages by GitHub Actions
-- **Source:** [leoolmos/pokechess](https://github.com/leoolmos/pokechess)
+Source: [leoolmos/pokechess](https://github.com/leoolmos/pokechess)
 
 ## 🛠️ How I build and ship
 
